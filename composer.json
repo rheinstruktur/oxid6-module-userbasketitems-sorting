@@ -1,0 +1,32 @@
+{
+    "name":        "rheinstruktur/oxid6-module-userbasketitems-sorting",
+    "description": "Sort the saved basket basketitems in the way the user added them to the basket after logout and login",
+    "type":        "oxideshop-module",
+    "keywords":    [
+        "oxid",
+        "modules",
+        "eShop",
+        "Basketitems sorting"
+    ],
+    "homepage":    "https://rheinstruktur.de",
+    "license": "GPL-3.0-only",
+    "authors":     [
+        {
+            "name":  "rheinstruktur GmbH",
+            "email": "daniel@rheinstruktur.de"
+        }
+    ],
+    "extra":       {
+        "oxideshop": {
+            "target-directory": "rs/UserBasketItemSorting"
+        }
+    },
+    "require":     {
+        "php": ">=5.6"
+    },
+    "autoload":    {
+        "psr-4": {
+            "Rheinstruktur\\BasePrice\\": "../../../source/modules/rs/UserBasketItemSorting"
+        }
+    }
+}
